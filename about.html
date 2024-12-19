@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - About</title>
+
+    <style>
+        
+        
+        body {
+            background-color: #000000;
+            color: #f1f1f1;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        p1{
+            font-size: 20px; /* Set the font size */
+           line-height: 2.0; /* Increase line height for better readability */
+           margin-top: 20px; /* Add some space above the paragraph */
+            margin-bottom: 30px; /* Add some space below the paragraph */
+            text-align: justify; /* Justify text for a cleaner, more balanced look */
+           color: #dbcd0c; /* Light gray text color for better contrast */
+           font-weight: 400; /* Normal font weight */
+          text-indent: 30px; /* Indent the first line of the paragraph */
+          }
+
+        nav {
+            background-color: #000000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #b4bb65;
+            font-size: 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: hsl(300, 33%, 98%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #b0c022;
+            font-size: 48px;
+            text-align: center;
+            margin-top: 30px;
+            text-shadow: 0 0 10px #b0c022;
+        }
+
+        .box {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            background-color: #2c2c2c;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box:hover {
+            background-color: #ffcc00;
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        .box img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .skills-list {
+            display: none;
+            margin-top: 10px;
+            padding: 0;
+            list-style: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .skills-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+        }
+
+        .skills-list li:last-child {
+            border: none;
+        }
+
+        .skills-list img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+
+       
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo.jpg" width="200px" alt="My Portfolio Logo">
+        </div>
+
+        <a href="http://127.0.0.1:5500/index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="res.html">RESUME</a>
+    </nav>
+
+    <div class="container">
+        <h1>ABOUT</h1>
+
+        <p1>
+            I am Parasa Kamal Siddardha, an engineering student at Prasad V. Potluri Siddhartha Institute of Technology, 
+            specializing in Computer Science and Engineering (CSE). I am passionate about web development, problem-solving, 
+            and creative design. My achievements include being selected as a Microsoft Learn Student Ambassador (MLSA), 
+            and I was chosen for ACM Winter School 2024 in "Decoding AI: Building Explainable and Robust Intelligence."
+        </p1>
+
+        <div class="box" onclick="toggleSkills('technical-skills')">
+            <img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" alt="Technical Skills">
+            Technical Skills
+        </div>
+        <ul id="technical-skills" class="skills-list">
+            <li><img src="https://cdn-icons-png.flaticon.com/512/919/919842.png" alt="C">C, C++</li>
+            <li><img src="https://static.vecteezy.com/system/resources/previews/024/267/885/original/dsa-letter-logo-design-in-illustration-logo-calligraphy-designs-for-logo-poster-invitation-etc-vector.jpg" alt="DSA">Problem-Solving & DSA</li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML">Frontend Web Development (HTML, CSS, JavaScript)</li>
+            <li><img src="https://image.similarpng.com/very-thumbnail/2020/11/Black-Android-icon-design-on-transparent-background-PNG.png" alt="Flutter">Flutter (Basic App Development)</li>
+            <li><img src="https://www.tshirtgeek.com.br/wp-content/uploads/2021/09/com037-scaled.jpg" alt="SQL">SQL DBA</li>
+        </ul>
+
+        <div class="box" onclick="toggleSkills('graphic-design-skills')">
+            <img src="https://www.datwebdigital.com/DWD/wp-content/uploads/2012/06/logo-design.jpg" alt="Graphic Designing">
+            Graphic Designing
+        </div>
+        <ul id="graphic-design-skills" class="skills-list">
+            <li><img src="http://fc07.deviantart.net/fs70/f/2013/040/d/2/photoscape_logo_png_by_luulujelenetor-d5ucz6x.png" alt="Photoscape">Photoscape</li>
+            <li><img src="https://www.kindpng.com/picc/m/81-814934_figma-logo-png-transparent-png.png" alt="Figma">Figma</li>
+            <li><img src="https://freelogopng.com/images/all_img/1656733807canva-icon-png.png" alt="Canva">Canva</li>
+            <li><img src="https://cdn-icons-png.flaticon.com/512/1140/1140493.png" alt="Design">Poster & Logo Designing for Instagram Posts</li>
+        </ul>
+
+        <div>
+            
+        </div>
+    </div>
+
+    
+
+    <script>
+        function toggleSkills(id) {
+            const skillList = document.getElementById(id);
+            if (skillList.style.display === 'none' || skillList.style.display === '') {
+                skillList.style.display = 'block';
+            } else {
+                skillList.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

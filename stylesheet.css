@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: didot, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #0f0101;
+    color: #eef1f0;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Navigation */
+nav {
+    background-color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #b4bb65;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: hsl(300, 33%, 98%);
+}
+
+/* Section Content */
+section {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(104, 71, 4);
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    position: relative; /* Changed from fixed to relative for better mobile usability */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px 0;
+        font-size: 16px; /* Slightly smaller font size for tablets */
+    }
+
+    header {
+        text-align: center; /* Center-align header for smaller screens */
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 14px; /* Further reduce font size for mobile */
+        padding: 10px 0;
+    }
+
+    header {
+        padding: 15px;
+        font-size: 18px; /* Adjust header font size */
+    }
+
+    section {
+        padding: 10px;
+        font-size: 14px; /* Reduce font size for mobile content */
+    }
+
+    footer {
+        font-size: 12px; /* Smaller font for footer on mobile */
+        padding: 10px;
+    }
+}
